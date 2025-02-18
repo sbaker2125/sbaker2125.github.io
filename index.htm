@@ -9,15 +9,38 @@ No errors on https://validator.w3.org/ or https://jigsaw.w3.org/css-validator/
   <head>
     <meta charset="utf-8">
     <title>Baker's Bicycle Site</title>
-    <meta name="description" content="A small bike shop with 5 different brands of bikes">  <meta name="keywords" content"miller, Pro, cycle, Trek, GT, BMX, Road Bikes, 29'ers">
-  </head>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script scr ="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script scr="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('nav_menu').slicknav({prependTo:"mobile_menu"});
+      });
+    </script>
 
+
+    <meta name="description" content="A small bike shop with 5 different brands of bikes">  <meta name="keywords" content"miller, Pro, cycle, Trek, GT, BMX, Road Bikes, 29'ers">
+    <meta name="viewport" content="wideth=device-wisth, intital-scale=1">
+
+  </head>
   <body>
     <header>
-      <img src="images/Bicycles.png" alt="MPC Logo" width="500">
-      <link rel="stylesheet" href="main.css">
-    </header>
+      <div class="bluetouch"><img src="images/Bicycles.png" alt="MPC Logo" width="500"></div>
       <h1>Baker's Bicycles</h1>
+    </header>
+
+     <!--Navigation Menu-->
+     <nav id=""mobile_menu"></nav>
+     <nav id="nav_menu">
+         <ul>
+             <li><a href="index.htm"class="current">Home</a></li>
+             <li><a href="rental.htm">Rentals</a></li>
+             <li><a href="sales.htm">Sales</a></li>
+             <li><a href="service.htm">Services</a></li>
+             <li><a href="contact.htm"class="lastitem">Contact</a></li>
+         </ul>
+     </nav>
       <h2>The family oriented bike shop.</h2>
       <p>Come on down to our shop and check out some of our bikes. We have bikes with or without tassles on the handlebars! We also carry childrens bikes!</p>
 
@@ -42,11 +65,10 @@ No errors on https://validator.w3.org/ or https://jigsaw.w3.org/css-validator/
     <pre>
 <!--my address-->
   Store Address:
-
   Baker's Bicucles
   189 BMX Drive
-  Makanda
-  IL, 62958
+  Makanda, IL 
+  62958
     </pre>
 
 
