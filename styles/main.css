@@ -1,3 +1,36 @@
+body{
+  font-size: medium;
+  width: auto;
+  max-width: fit-content;
+  background-color: #b3b3ff;
+  margin: auto;
+}
 header{
-background: skyblue;
+  width: auto;
+  padding: 10px auto;
+  clear: both;
+  background-color: #ccccff;
+  font-size: 1.5 em;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+header h1{
+  font-family: Lucida Handwritting;
+  font-weight: bold;
+  text-align: center;
+}
+#nav_menu{
+  clear: left;
+  border-bottom: 2px solid steelblue;
+}
+#nav_menu ul{
+  list-style: none;
+  position: relative;
+}
+#nav_menu ul li{
+  float: left;
+}
+#nav_menu ul li:hover{
+  display: block;
 }
