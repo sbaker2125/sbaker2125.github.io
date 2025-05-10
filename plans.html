@@ -1,0 +1,92 @@
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script scr ="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script scr="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('nav_menu').slicknav({prependTo:"mobile_menu"});
+      });
+    </script>
+
+    <body>
+      <header>
+        <h1>College Student Resource Hub</h1>
+        <h2>Career Planning</h2>
+      </header>
+      <nav id="nav_menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tips.html">Study Tips</a></li>
+          <li><a href="money.html">Budgeting</a></li>
+          <li><a href="plans.html" class="current">Career Planning</a></li>
+            <ul>
+              <li><a href="Templates&Tools.html">Templates and Career Tools</a></li>
+              <li><a href="commoninterviewquestions.html">Common Interview Questions</a></li>
+            </ul>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <main>
+        <section class="resources" style="display: flex; gap: 2rem;padding: 2rem;">
+        <!--Column 1:Cover Letter-->
+        <div class="column" style="flex: 1;">
+          <h2>Cover Letter</h2>
+          <div class="cover-grid">
+            <div class="cover-card">
+              <h3>How to Write a Cover Letter</h3>
+              <ol>
+                <li>Date and Contact Information</li>
+                <li>Salutation/Greeting</li>
+                <li>Opening Paragraph</li>
+                <li>Middle Paragraph(s)</li>
+                <li>Closing Paragraph</li>
+                <li>Complimentary Close and Signature</li>
+              </ol>
+              <h3>Tips for Writing a Cover Letter</h3>
+              <ol>
+                <li>Customize your header based on your application format</li>
+                <li>Avoid generic references to your abilities</li>
+                <li>Keep it short and to the point</li>
+                <li>Proofread before you submit</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <!--Column 2:Resume-->
+        <div class="column" style="flex: 1;">
+          <h2>Resume</h2>
+          <div class="resume-grid">
+            <div class="resume-card">
+              <h3>How to Write a Resume</h3>
+              <ol>
+                <li>Name and Contact Information</li>
+                <li>Summary or Objective</li>
+                <li>Professional Histroy (most recent first)</li>
+                <li>Education</li>
+                <li>Skills</li>
+                <li>Optional</li>
+              </ol>
+              <h3>Tips for Writing a Resume</h3>
+              <ol>
+                <li>Look for keywords in the job posting</li>
+                <li>Review resume examples for your industry</li>
+                <li>Use a professional font</li>
+                <li>Include only relevant information</li>
+                <li>Use active language</li>
+                <li>Call attention to important achievements</li>
+                <li>Only include subheading and sections you need</li>
+                <li>Choose appropriate margins</li>
+                <li>Proofread</li>
+                <li>Make multiple versions of your resume</li>
+              </ol>
+            </div>
+          </div>
+        </main>
+    </body>
+
+
+
+</html>

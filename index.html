@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--@author sydni baker, Bakers Bicycle Index Page
+Southern Illinois University Developed: 01/22/25 Tested 01/22/25
+No errors on https://validator.w3.org/ or https://jigsaw.w3.org/css-validator/
+-->
+
+<!--Comment Header for my website -->
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script scr ="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script scr="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('nav_menu').slicknav({prependTo:"mobile_menu"});
+      });
+    </script>
+
+    <body>
+      <header>
+        <h1>College Student Resource Hub</h1>
+        <h4>
+          <nav id="nav_menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="tips.html">Study Tips</a></li>
+              <li><a href="money.html">Budgeting</a></li>
+              <li class="dropdown">
+                <a href="plans.html" class="current">Career Planning</a>
+                <ul class="dropdown-content">
+                  <li><a href="Templates&Tools.html">Templates and Career Tools</a></li>
+                  <li><a href="commoninterviewquestions.html">Common Interview Questions</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </h4>
+      </header>
+      <main>
+        <img src="images/students_09.jpg" class="featured-image" alt="Students on campus">
+        <h2> Welcome to the Resource Hub </h2>
+        <p>This is a website that can help future, current, and recent graduates through your college experience or into the workforce
+          experience.</p>
+        <p>This can help with studying, career planning, and budgeting. You can send questions in our contact page if you have 
+          any other questions.</p>
+        <h3>What can you learn from this website?</h3>
+          <li>Studying better, more efficient, notes taking tips, and more.</li>
+          <li>How to budget for college.</li>
+          <li>Good way to get noticed for future careers, resume and cover letter examples.</li>
+          <li>Ask any questions you may have.</li>
+      </main>
+    </body>
+    <footer>
+      <p>Author: Sydni Baker<br>
+      College Student Resource Hub<br>
+      <a href="sydni.baker@siu.edu">sydni.baker@siu.edu</a></p>
+    </footer>
+
+
+</html>
+

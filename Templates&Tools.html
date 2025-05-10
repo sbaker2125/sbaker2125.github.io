@@ -1,0 +1,74 @@
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script scr ="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script scr="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('nav_menu').slicknav({prependTo:"mobile_menu"});
+      });
+    </script>
+
+    <body>
+      <header>
+        <h1>College Student Resource Hub</h1>
+        <h2>Career Planning</h2>
+      </header>
+      <nav id="nav_menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tips.html">Study Tips</a></li>
+          <li><a href="money.html">Budgeting</a></li>
+          <li class="dropdown">
+            <a href="plans.html" class="current">Career Planning</a>
+            <ul class="dropdown-content">
+              <li><a href="Templates&Tools.html">Templates and Career Tools</a></li>
+              <li><a href="commoninterviewquestions.html">Common Interview Questions</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+<main>
+    <section class="resources" style="display: flex; gap: 2rem;padding: 2rem;">
+      <!--Column 1: Template-->
+      <div class="column" style="flex: 1;">
+        <h2>Resume and Cover Letter Templates</h2>
+        <div class="template-grid">
+          <div class="template-card">
+            <h3>Resume</h3>
+            <ul>
+              <li><a href="templates/Color block resume.docx" download>Download Color Block Resume</a></li>
+              <li><a href="templates/Industry manager resume.docx" download>Download Industry Manager Resume</a></li>
+              <li><a href="templates/Modern nursing resume.docx" download>Download Modern Nursing Resume</a></li>
+            </ul>
+            <h3>Cover Letters</h3>
+            <ul>
+              <li><a href="templates/Modern initials cover letter.docx" download>Download Modern Initials Cover Letter</a></li>
+              <li><a href="templates/Bold nursing cover letter.docx" download>Bold Nursing Cover Letter</a></li>
+              <li><a href="templates/Resume cover letter when referred.docx" download>Resume Cover Letter when Referred</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--Column 2: Career Exploration Tools-->
+      <div class="column" style="flex: 1;">
+        <h2>Career Exploration Tools</h2>
+        <div class="tools-grid">
+          <div class="tool-card">
+            <h3>Career Assessment Test</h3>
+            <a href="https://truity.com/test/career-personality-profiler-test">Take Assessment</a>
+            <h3>Networking Websites</h3>
+            <h4>This is how you can find jobs and meet people to help you with your career!</h4>
+            <ul>
+            <li><a href="https://linkedin.com">LinkedIn</a></li>
+            <li><a href="https://joinhandshake.com">HandShake</a></li>
+            <li><a href="https://indeed.com">Indeed</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
