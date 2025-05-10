@@ -1,0 +1,249 @@
+/* === Base Reset === */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 16px;
+	background-color: #b3b3ff;
+	color: #222;
+	max-width: 1200px;
+	margin: auto;
+	padding: 20px;
+	line-height: 1.6;
+  }
+  
+  /* === Header === */
+  header {
+	background-color: #ccccff;
+	border: 2px solid black;
+	padding: 20px;
+	text-align: center;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+	font-family: 'Lucida Handwriting', cursive;
+	font-weight: bold;
+	color: #222;
+	font-size: 2rem;
+  }
+  
+  /* === Navigation Menu === */
+  #nav_menu {
+	margin: 20px 0;
+  }
+  
+  #nav_menu ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	background-color: #9999ff;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  #nav_menu li {
+	border-right: 1px solid #666;
+  }
+  
+  #nav_menu li:last-child {
+	border-right: none;
+  }
+  
+  #nav_menu li a {
+	display: block;
+	padding: 15px 25px;
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+	transition: background 0.3s ease;
+  }
+  
+  #nav_menu li a:hover {
+	background-color: #6666cc;
+	color: #fff;
+  }
+  
+  /* === Main Content === */
+  main {
+	padding: 20px;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	font-family: 'Trebuchet MS', sans-serif;
+	margin-bottom: 30px;
+  }
+  
+  main h2 {
+	margin-bottom: 10px;
+	font-size: 1.5rem;
+	color: #333;
+  }
+  
+  main p {
+	margin-bottom: 1em;
+	text-align: justify;
+  }
+  
+  main li {
+	margin-left: 1.5em;
+	margin-bottom: 0.5em;
+  }
+  
+  /* === Footer === */
+  footer {
+	text-align: center;
+	padding: 20px;
+	font-size: 0.9rem;
+	color: #333;
+	background-color: #ccccff;
+	border-top: 2px solid black;
+	border-radius: 8px;
+  }
+  
+  /* === Forms (Optional) === */
+  form {
+	background-color: #f0f0ff;
+	padding: 20px;
+	border-radius: 8px;
+	margin-top: 30px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
+  form label {
+	display: block;
+	margin-top: 10px;
+	font-weight: bold;
+  }
+  
+  form input,
+  form textarea,
+  form select {
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+  }
+  
+  form button {
+	background-color: #4d4dff;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 6px;
+	margin-top: 15px;
+	cursor: pointer;
+  }
+  
+  form button:hover {
+	background-color: #3333cc;
+  }
+  
+  /* === Responsive Adjustments === */
+  @media (max-width: 768px) {
+	#nav_menu ul {
+	  flex-direction: column;
+	}
+  
+	#nav_menu li {
+	  border-right: none;
+	  border-bottom: 1px solid #666;
+	}
+  
+	#nav_menu li:last-child {
+	  border-bottom: none;
+	}
+  }
+  /* Dropdown container */
+.dropdown {
+	position: relative;
+  }
+  
+  /* Dropdown content - hidden by default */
+  .dropdown-content {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #9999ff;
+	border-radius: 0 0 8px 8px;
+	min-width: 220px;
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease, visibility 0.3s ease;
+	z-index: 1000;
+  }
+  
+  /* Dropdown link items */
+  .dropdown-content li {
+	border-bottom: 1px solid #ccc;
+  }
+  
+  .dropdown-content li a {
+	display: block;
+	padding: 12px 16px;
+	text-align: left;
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  .dropdown-content li a:hover {
+	background-color: #6666cc;
+  }
+  
+  /* Show dropdown on hover */
+  .dropdown:hover .dropdown-content {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+  }
+  .featured-image {
+	width: 100%;          /* Image takes up full width of its container */
+	height: auto;         /* Maintain aspect ratio */
+	display: block;       /* Remove any inline spacing */
+	margin: 20px 0;       /* Add some space above and below the image */
+  }
+  .featured-image {
+	display: block;
+	margin: 0 auto;
+	width: 80%;  /* You can adjust this percentage to control the image's width */
+  }
+  .featured-image {
+	width: 80%;
+	height: auto;
+	margin: 20px auto;
+	display: block;
+	border: 5px solid #333;   /* Add a border around the image */
+	border-radius: 10px;      /* Rounded corners */
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  /* Add a subtle shadow */
+  }
+  .featured-image {
+	width: 100%;            /* Full width on smaller screens */
+	height: auto;           /* Maintain aspect ratio */
+	max-width: 600px;       /* Maximum width of 600px */
+	margin: 20px auto;      /* Center the image */
+  }
+  .featured-image {
+	width: 100%;
+	height: auto;
+	margin: 20px auto;
+	display: block;
+	border: 5px solid #333;
+	border-radius: 10px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+	.featured-image {
+	  width: 90%;         /* Use 90% width on smaller screens */
+	  margin: 10px auto;  /* Adjust margins */
+	}
+  }
+	  
+	  
